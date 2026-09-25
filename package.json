@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-paraguay-dncp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Paraguay DNCP MCP — Paraguay government procurement / public contracts (keyless).",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-paraguay-dncp": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "paraguay-dncp"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-paraguay-dncp"
+    "url": "git+https://github.com/pipeworx-io/mcp-paraguay-dncp.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-9060e97610f437b9be6fba28a806b1a2228a113ce2fdb2a0f168a86855399386",
+    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
   }
 }
